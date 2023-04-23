@@ -5,7 +5,7 @@ interface SayHelloInterface {
   greetingTwo?: string;
 }
 
-export const SayHello: React.FC<SayHelloInterface> = ({
+const SayHello: React.FC<SayHelloInterface> = ({
   greetingOne,
   greetingTwo = "greeting two",
 }) => {
@@ -16,3 +16,5 @@ export const SayHello: React.FC<SayHelloInterface> = ({
     </>
   );
 };
+
+export default SayHello;

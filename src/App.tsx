@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
 import Heading from "./components/Heading";
-import { SayHello } from "./components/SayHello";
+import TodoItem from "./components/TodoItem";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <SayHello greetingOne="Hello" />
       <Heading />
+      <ul>
+        <TodoItem name="go to gym" isDone />
+        <TodoItem name="wash the dishes" />
+        <TodoItem name="clean the house" />
+      </ul>
     </div>
   );
 };
