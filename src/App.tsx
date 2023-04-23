@@ -1,17 +1,23 @@
 import React from "react";
 import "./App.css";
 import Heading from "./components/Heading";
-import TodoItem from "./components/TodoItem";
+// import TodoItem from "./components/TodoItem";
+import ShoppingList from "./components/ShoppingList";
 
 const App: React.FC = () => {
+  const shopping = [
+    "apples",
+    "bread",
+    "butter",
+    "bananas",
+    "milk",
+    "chocolate",
+  ];
+
   return (
     <div className="App">
       <Heading />
-      <ul>
-        <TodoItem name="go to gym" isDone />
-        <TodoItem name="wash the dishes" />
-        <TodoItem name="clean the house" />
-      </ul>
+      <ShoppingList shopping={shopping} />
     </div>
   );
 };
